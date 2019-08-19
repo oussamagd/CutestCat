@@ -1,0 +1,60 @@
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.deps.json
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.runtimeconfig.json
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.runtimeconfig.dev.json
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.dll
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.pdb
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.Views.dll
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.Views.pdb
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csprojAssemblyReference.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CoreCompileInputs.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorAssemblyInfo.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorAssemblyInfo.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.AssemblyInfoInputs.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.AssemblyInfo.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.TagHelpers.input.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.TagHelpers.output.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorCoreGenerate.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorTargetAssemblyInfo.cache
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorTargetAssemblyInfo.cs
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.Views.pdb
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.dll
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.pdb
+C:\Users\ogouider\Documents\Visual Studio 2017\Projects\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CopyComplete
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CoreCompileInputs.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorAssemblyInfo.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorAssemblyInfo.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.AssemblyInfoInputs.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.AssemblyInfo.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.pdb
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.deps.json
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.runtimeconfig.json
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.runtimeconfig.dev.json
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.pdb
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.Views.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\bin\Debug\netcoreapp2.2\CutestCat.Views.pdb
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.TagHelpers.input.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.TagHelpers.output.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorCoreGenerate.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorTargetAssemblyInfo.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorTargetAssemblyInfo.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.Views.pdb
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CopyComplete
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csprojAssemblyReference.cache
