@@ -19,14 +19,14 @@ namespace CutestCat.Controllers
             _catBusiness = catBusiness;
         }
 
-        public IActionResult GetCats()
+        public IActionResult Cats()
         {
             var cats = _catBusiness.GetCats();
             return View(cats);
         }
         public IActionResult Vote()
         {
-            var catsForVote = _catBusiness.GetCatsForVote();
+            var catsForVote = _catBusiness.GetCatsForVoteAsync();
             return View(catsForVote);
         }
 

@@ -9,7 +9,7 @@ namespace CutestCat.Business
     public interface ICatBusiness
     {
         Task SendVote(VoteResultModel model);
-        Task<Tuple<Cat, Cat>> GetCatsForVote();
-        Task<List<Cat>> GetCats();
+        Task<Tuple<Cat, Cat>> GetCatsForVoteAsync();
+        List<Cat> GetCats();
     }
 }

@@ -34,6 +34,9 @@ namespace CutestCat
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            var section = Configuration.GetSection("ApiConfiguration");
+            services.Configure<ApiConfiguration>(section);
+
             services.AddTransient<ICatBusiness, CatBusiness>();
         }
 
