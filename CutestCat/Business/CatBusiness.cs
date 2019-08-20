@@ -13,12 +13,15 @@ namespace CutestCat.Business
     {
         private readonly IOptions<ApiConfiguration> _apiConfiguration;
 
-        private readonly ICatRepository _catRepository;
+        private readonly ICatSqlRepository _catRepository;
 
-       public CatBusiness(IOptions<ApiConfiguration> apiConfiguration, ICatRepository catRepository)
+        private readonly ICatHttpRepository _catHttpRepository;
+
+        public CatBusiness(IOptions<ApiConfiguration> apiConfiguration, ICatSqlRepository catRepository, ICatHttpRepository catHttpRepository)
         {
             _apiConfiguration = apiConfiguration;
             _catRepository = catRepository;
+            _catHttpRepository = catHttpRepository;
         }
         public List<Cat> GetCats()
         {
@@ -27,7 +30,9 @@ namespace CutestCat.Business
 
         public async Task<Tuple<Cat, Cat>> GetCatsForVoteAsync()
         {
-            var cats = await HttpHelper.Get<List<Cat>>(_apiConfiguration.Value.CatApiPath);
+
+            var cats = await _catHttpRepository.GetAllCatWithPicture();
+
             return GetTwoRandomCats(cats);
         }
 

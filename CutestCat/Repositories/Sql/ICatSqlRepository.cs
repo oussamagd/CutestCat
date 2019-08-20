@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CutestCat.Models;
 
 namespace CutestCat.Repositories.Sql
 {
-    public class CatRepository : ICatRepository
+    public interface ICatSqlRepository
     {
+        List<Cat> GetCats();
     }
 }

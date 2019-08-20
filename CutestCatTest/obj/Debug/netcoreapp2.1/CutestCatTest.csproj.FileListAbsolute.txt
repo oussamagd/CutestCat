@@ -12,3 +12,17 @@ C:\Users\Saif\Desktop\Git\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\Cutest
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.AssemblyInfo.cs
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.dll
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.pdb
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\CutestCatTest.deps.json
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\CutestCatTest.runtimeconfig.json
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\CutestCatTest.runtimeconfig.dev.json
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\CutestCatTest.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\bin\Debug\netcoreapp2.1\CutestCatTest.pdb
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.csprojAssemblyReference.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.csproj.CoreCompileInputs.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.AssemblyInfoInputs.cache
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.AssemblyInfo.cs
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.dll
+C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCatTest\obj\Debug\netcoreapp2.1\CutestCatTest.pdb

@@ -19,15 +19,15 @@ namespace CutestCat.Controllers
             _catBusiness = catBusiness;
         }
 
-        public IActionResult Cats()
+        public IActionResult CatsToVote()
         {
             var cats = _catBusiness.GetCats();
             return View(cats);
         }
-        public IActionResult Vote()
+        public Task<Tuple<Cat,Cat>> Vote()
         {
             var catsForVote = _catBusiness.GetCatsForVoteAsync();
-            return View(catsForVote);
+            return catsForVote;
         }
 
         [HttpPost]

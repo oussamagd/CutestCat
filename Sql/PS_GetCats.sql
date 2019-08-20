@@ -7,7 +7,7 @@ AS
 
 SELECT Reference,
 	   [Url],
-	   WinVoteCount,
+	   WinVoteCount, 
 	   LostVoteCount
 FROM Tbl_Cat
 

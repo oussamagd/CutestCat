@@ -2,6 +2,7 @@
 CREATE TABLE [Tbl_Cat] (
     [CatId] INT NOT NULL IDENTITY,
 	[Reference] VARCHAR(50) NOT NULL,
+	[Url] VARCHAR(200) NOT NULL,
 	[WinVoteCount] INT NOT NULL,
 	[LostVoteCount] INT NOT NULL,
     CONSTRAINT [PK_Cat] PRIMARY KEY ([CatId])

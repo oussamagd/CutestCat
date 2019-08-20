@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CutestCat.Business;
+using CutestCat.Repositories.Http;
+using CutestCat.Repositories.Sql;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -38,6 +40,9 @@ namespace CutestCat
             services.Configure<ApiConfiguration>(section);
 
             services.AddTransient<ICatBusiness, CatBusiness>();
+            services.AddTransient<ICatSqlRepository, CatSqlRepository>();
+            services.AddTransient<ICatHttpRepository, CatHttpRepository>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

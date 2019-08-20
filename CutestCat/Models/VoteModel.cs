@@ -7,7 +7,7 @@ namespace CutestCat.Models
 {
     public class VoteModel
     {
-        public Cat Cat1 { get; set; }
-        public Cat Cat2 { get; set; }
+        public Cat WinnerCat { get; set; }
+        public Cat LoserCat { get; set; }
     }
 }

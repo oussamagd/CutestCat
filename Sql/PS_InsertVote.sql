@@ -4,13 +4,15 @@ GO
 
 ALTER PROCEDURE PS_InsertVote
 	 @WinCatReference varchar(50), 
-	 @LostCatReference varchar(50)
+	 @WinCatUrl varchar(200), 
+	 @LostCatReference varchar(50),
+	 @LostCatUrl varchar(200)
 AS
 
 IF NOT EXISTS (SELECT * FROM Tbl_Cat WHERE Reference = @WinCatReference)
 BEGIN
-	INSERT INTO Tbl_Cat (Reference, WinVoteCount,LostVoteCount)
-		VALUES(@WinCatReference , 1, 0)
+	INSERT INTO Tbl_Cat (Reference,Url, WinVoteCount,LostVoteCount)
+		VALUES(@WinCatReference, @WinCatUrl , 1, 0)
 END
 ELSE
 BEGIN
@@ -22,8 +24,8 @@ END
 
 IF NOT EXISTS (SELECT * FROM Tbl_Cat WHERE Reference = @LostCatReference)
 BEGIN
-	INSERT INTO Tbl_Cat (Reference, WinVoteCount,LostVoteCount)
-		VALUES(@LostCatReference , 0, 1)
+	INSERT INTO Tbl_Cat (Reference,Url, WinVoteCount,LostVoteCount)
+		VALUES(@LostCatReference, @LostCatUrl , 0, 1)
 END
 ELSE
 BEGIN

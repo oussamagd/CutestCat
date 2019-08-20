@@ -8,5 +8,7 @@ namespace CutestCat
     public class ApiConfiguration
     {
         public string CatApiPath { get; set; }
+
+        public string CatContext { get; set; }
     }
 }
