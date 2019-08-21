@@ -58,7 +58,6 @@ C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\
 C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.Views.pdb
 C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CopyComplete
 C:\Users\ogouider\Desktop\cutestcat\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csprojAssemblyReference.cache
-C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csprojAssemblyReference.cache
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CoreCompileInputs.cache
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorAssemblyInfo.cache
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorAssemblyInfo.cs
@@ -88,3 +87,4 @@ C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.RazorTargetAssemblyInfo.cs
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.Views.pdb
 C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csproj.CopyComplete
+C:\Users\Saif\Desktop\Git\CutestCat\CutestCat\obj\Debug\netcoreapp2.2\CutestCat.csprojAssemblyReference.cache

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CutestCat.Controllers
 {
-
+    [Route("api/[controller]")]
     public class CatController : Controller
     {
         private readonly ICatBusiness _catBusiness;
@@ -19,22 +19,28 @@ namespace CutestCat.Controllers
             _catBusiness = catBusiness;
         }
 
-        public IActionResult CatsToVote()
+        [HttpGet]
+        [Route("")]
+        public ActionResult<List<Cat>> GetCats()
         {
             var cats = _catBusiness.GetCats();
-            return View(cats);
-        }
-        public Task<Tuple<Cat,Cat>> Vote()
-        {
-            var catsForVote = _catBusiness.GetCatsForVoteAsync();
-            return catsForVote;
+            return Ok(cats);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Vote([FromBody]VoteResultModel model)
+        [HttpGet]
+        [Route("Vote/Candidates")]
+        public ActionResult<List<Cat>> GetCandidates()
         {
-            await _catBusiness.SendVote(model);
-            return Ok("OK");
+            var catsForVote = _catBusiness.GetCandidates();
+            return Ok(catsForVote);
+        }
+
+        [HttpGet]
+        [Route("Vote")]
+        public IActionResult Vote(VoteModel model)
+        {
+            _catBusiness.Vote(model);
+            return Ok();
         }
     }
 }

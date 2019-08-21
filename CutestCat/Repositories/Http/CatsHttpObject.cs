@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CutestCat.Repositories.Http
 {
-    public class CatImagesHttpObject
+    public class CatsHttpObject
     {
-        public List<CatImageHttpObject> Images { get; set; }
+        public List<CatHttpObject> Images { get; set; }
     }
 
-    public class CatImageHttpObject
+    public class CatHttpObject
     {
         public string Url { get; set; }
         public string Id { get; set; }

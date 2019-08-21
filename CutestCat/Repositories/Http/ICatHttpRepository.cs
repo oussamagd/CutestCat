@@ -8,6 +8,6 @@ namespace CutestCat.Repositories.Http
 {
     public interface ICatHttpRepository
     {
-        Task<List<Cat>> GetAllCatWithPicture();
+        List<Cat> GetAllCandidates();
     }
 }

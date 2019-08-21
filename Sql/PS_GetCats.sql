@@ -5,10 +5,10 @@ GO
 ALTER PROCEDURE PS_GetCats
 AS
 
-SELECT Reference,
-	   [Url],
-	   WinVoteCount, 
-	   LostVoteCount
+SELECT Reference			AS 'Reference',
+	   [Url]				AS 'Url',
+	   WinVoteCount			AS 'WinVoteCount', 
+	   LostVoteCount		AS 'LostVoteCount'
 FROM Tbl_Cat
 
 GO

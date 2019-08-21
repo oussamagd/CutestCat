@@ -14,10 +14,10 @@ namespace CutestCat.Repositories.Http
         {
             _apiConfiguration = apiConfiguration;
         }
-        public async Task<List<Cat>> GetAllCatWithPicture()
+        public List<Cat> GetAllCandidates()
         {
-            var cats = (await HttpHelper.Get<CatImagesHttpObject>(_apiConfiguration.Value.CatApiPath)).Images;
-            return cats.Select(cat => cat.ToModel()).ToList();
+            var catsDto = HttpHelper.Get<CatsHttpObject>(_apiConfiguration.Value.CatApiPath);
+            return catsDto.Images.Select(cat => cat.ToModel()).ToList();
         }
     }
 }

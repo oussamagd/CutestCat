@@ -17,6 +17,8 @@ namespace CutestCat.Business
 
         private readonly ICatHttpRepository _catHttpRepository;
 
+        public const int NbrOfCandidate = 2;
+
         public CatBusiness(IOptions<ApiConfiguration> apiConfiguration, ICatSqlRepository catRepository, ICatHttpRepository catHttpRepository)
         {
             _apiConfiguration = apiConfiguration;
@@ -28,30 +30,40 @@ namespace CutestCat.Business
            return _catRepository.GetCats();
         }
 
-        public async Task<Tuple<Cat, Cat>> GetCatsForVoteAsync()
+        public List<Cat> GetCandidates()
         {
+            var cats =  _catHttpRepository.GetAllCandidates();
 
-            var cats = await _catHttpRepository.GetAllCatWithPicture();
-
-            return GetTwoRandomCats(cats);
+            return GetRandomCandidates(cats, 2);
         }
 
-        public Tuple<Cat, Cat> GetTwoRandomCats(List<Cat> cats)
+
+        public List<Cat> GetRandomCandidates(List<Cat> cats, int number)
         {
+            var indexList = GetRandomIndex(cats.Count, NbrOfCandidate);
+
+            return indexList.Select(index => cats[index]).ToList();
+        }
+
+        public List<int> GetRandomIndex(int maxValue, int number)
+        {
+            var result = new List<int>();
             var random = new Random();
-            int firstCatIndex = random.Next(0, cats.Count);
-            int secondCatIndex;
-            do
+            var newIndex = 0;
+            for (int i = 0; i < number; i++)
             {
-                secondCatIndex = random.Next(0, cats.Count);
-            } while (secondCatIndex == firstCatIndex);
-
-            return new Tuple<Cat, Cat>(cats[firstCatIndex], cats[secondCatIndex]);
+                do
+                {
+                    newIndex = random.Next(0, maxValue);
+                } while (result.Contains(newIndex));
+                result.Add(newIndex);
+            }
+            return result;
         }
 
-        public Task SendVote(VoteResultModel model)
+        public void Vote(VoteModel model)
         {
-            throw new NotImplementedException();
+            _catRepository.Vote(model);
         }
     }
 }

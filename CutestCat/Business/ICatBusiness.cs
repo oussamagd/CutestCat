@@ -8,8 +8,8 @@ namespace CutestCat.Business
 {
     public interface ICatBusiness
     {
-        Task SendVote(VoteResultModel model);
-        Task<Tuple<Cat, Cat>> GetCatsForVoteAsync();
+        void Vote(VoteModel model);
+        List<Cat> GetCandidates();
         List<Cat> GetCats();
     }
 }

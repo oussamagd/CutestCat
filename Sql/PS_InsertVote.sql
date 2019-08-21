@@ -11,7 +11,7 @@ AS
 
 IF NOT EXISTS (SELECT * FROM Tbl_Cat WHERE Reference = @WinCatReference)
 BEGIN
-	INSERT INTO Tbl_Cat (Reference,Url, WinVoteCount,LostVoteCount)
+	INSERT INTO Tbl_Cat (Reference,[Url], WinVoteCount,LostVoteCount)
 		VALUES(@WinCatReference, @WinCatUrl , 1, 0)
 END
 ELSE
@@ -24,7 +24,7 @@ END
 
 IF NOT EXISTS (SELECT * FROM Tbl_Cat WHERE Reference = @LostCatReference)
 BEGIN
-	INSERT INTO Tbl_Cat (Reference,Url, WinVoteCount,LostVoteCount)
+	INSERT INTO Tbl_Cat (Reference,[Url], WinVoteCount,LostVoteCount)
 		VALUES(@LostCatReference, @LostCatUrl , 0, 1)
 END
 ELSE
@@ -34,6 +34,7 @@ BEGIN
 	WHERE Reference = @LostCatReference
 END
 
+INSERT INTO Tbl_CatVote () VALUES ()
 
 
 GO
