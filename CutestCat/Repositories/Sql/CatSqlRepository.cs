@@ -28,13 +28,14 @@ namespace CutestCat.Repositories.Sql
                     {
                         while (reader.Read())
                         {
-                            result.Add(new CatSqlObjet()
-                            {
-                                Reference = Convert.ToString(reader["Reference"]),
-                                Url = Convert.ToString(reader["Url"]),
-                                WinVoteCount = Convert.ToInt32(reader["WinVoteCount"]),
-                                LostVoteCount = Convert.ToInt32(reader["LostVoteCount"])
-                            });
+                            MapCat(result, reader);
+                            //result.Add(new CatSqlObjet()
+                            //{
+                            //    Reference = Convert.ToString(reader["Reference"]),
+                            //    Url = Convert.ToString(reader["Url"]),
+                            //    WinVoteCount = Convert.ToInt32(reader["WinVoteCount"]),
+                            //    LostVoteCount = Convert.ToInt32(reader["LostVoteCount"])
+                            //});
                         }
                     }
 

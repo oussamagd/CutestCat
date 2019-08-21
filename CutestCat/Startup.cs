@@ -42,7 +42,17 @@ namespace CutestCat
             services.AddTransient<ICatBusiness, CatBusiness>();
             services.AddTransient<ICatSqlRepository, CatSqlRepository>();
             services.AddTransient<ICatHttpRepository, CatHttpRepository>();
-            
+
+
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddAuthentication("Cookie")
+            //    .AddScheme<CookieAuthenticationOptions, CookieAuthenticationHandler>("Cookie", null);
+            //services.AddLogging(builder => { builder.AddSerilog(dispose: true); });
+            //services.AddCareApiCors(_configuration);
+            //services.WithAutoServiceDiscovery(_configuration);
+            //services.Configure<ExternalUrlSetting>(_configuration.GetSection("ExternalUrl"));
+            //services.Configure<ApiSetting>(_configuration.GetSection("Api"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +79,13 @@ namespace CutestCat
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
+            //app.UseMiddleware(typeof(RequestLoggingMiddleware));
+            //app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+            //app.UseAuthentication();
+            //app.UseCors();
+            //app.UseMvc();
         }
     }
 }
