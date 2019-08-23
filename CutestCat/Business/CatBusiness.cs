@@ -11,7 +11,6 @@ namespace CutestCat.Business
 {
     public class CatBusiness : ICatBusiness
     {
-        private readonly IOptions<ApiConfiguration> _apiConfiguration;
 
         private readonly ICatSqlRepository _catRepository;
 
@@ -19,9 +18,8 @@ namespace CutestCat.Business
 
         public const int NbrOfCandidate = 2;
 
-        public CatBusiness(IOptions<ApiConfiguration> apiConfiguration, ICatSqlRepository catRepository, ICatHttpRepository catHttpRepository)
+        public CatBusiness( ICatSqlRepository catRepository, ICatHttpRepository catHttpRepository)
         {
-            _apiConfiguration = apiConfiguration;
             _catRepository = catRepository;
             _catHttpRepository = catHttpRepository;
         }
@@ -34,18 +32,18 @@ namespace CutestCat.Business
         {
             var cats =  _catHttpRepository.GetAllCandidates();
 
-            return GetRandomCandidates(cats, 2);
+            return GetRandomCandidates(cats, NbrOfCandidate);
         }
 
 
-        public List<Cat> GetRandomCandidates(List<Cat> cats, int number)
+        public List<Cat> GetRandomCandidates(List<Cat> cats,int number)
         {
-            var indexList = GetRandomIndex(cats.Count, NbrOfCandidate);
+            var indexList = GetRandomIndex(cats.Count, number);
 
             return indexList.Select(index => cats[index]).ToList();
         }
 
-        public List<int> GetRandomIndex(int maxValue, int number)
+        public List<int> GetRandomIndex(int maxValue,int number)
         {
             var result = new List<int>();
             var random = new Random();
