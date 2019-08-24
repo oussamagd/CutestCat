@@ -44,14 +44,7 @@ namespace CutestCat
             services.AddTransient<ICatHttpRepository, CatHttpRepository>();
 
 
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            //services.AddAuthentication("Cookie")
-            //    .AddScheme<CookieAuthenticationOptions, CookieAuthenticationHandler>("Cookie", null);
             //services.AddLogging(builder => { builder.AddSerilog(dispose: true); });
-            //services.AddCareApiCors(_configuration);
-            //services.WithAutoServiceDiscovery(_configuration);
-            //services.Configure<ExternalUrlSetting>(_configuration.GetSection("ExternalUrl"));
-            //services.Configure<ApiSetting>(_configuration.GetSection("Api"));
 
         }
 
@@ -72,7 +65,7 @@ namespace CutestCat
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -81,11 +74,7 @@ namespace CutestCat
             });
 
 
-            //app.UseMiddleware(typeof(RequestLoggingMiddleware));
-            //app.UseMiddleware(typeof(ErrorHandlingMiddleware));
-            //app.UseAuthentication();
-            //app.UseCors();
-            //app.UseMvc();
+
         }
     }
 }
