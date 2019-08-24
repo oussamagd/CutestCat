@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CutestCat", "CutestCat\CutestCat.csproj", "{9B4B629F-D390-4FB1-8DDD-3BF9EAF3B747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CutestCatTest", "CutestCatTest\CutestCatTest.csproj", "{527D7EE1-2FE7-450B-BB3B-55566ED3DA8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CutestCatTest", "CutestCatTest\CutestCatTest.csproj", "{527D7EE1-2FE7-450B-BB3B-55566ED3DA8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CutestCatClient", "WebApplication1\CutestCatClient.csproj", "{EE67A055-8156-4458-A8B4-414CE9EFB1E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{527D7EE1-2FE7-450B-BB3B-55566ED3DA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{527D7EE1-2FE7-450B-BB3B-55566ED3DA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{527D7EE1-2FE7-450B-BB3B-55566ED3DA8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE67A055-8156-4458-A8B4-414CE9EFB1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE67A055-8156-4458-A8B4-414CE9EFB1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE67A055-8156-4458-A8B4-414CE9EFB1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE67A055-8156-4458-A8B4-414CE9EFB1E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
