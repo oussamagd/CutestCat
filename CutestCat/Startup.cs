@@ -34,8 +34,6 @@ namespace CutestCat
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
             var section = Configuration.GetSection("ApiConfiguration");
             services.Configure<ApiConfiguration>(section);
 
@@ -43,9 +41,11 @@ namespace CutestCat
             services.AddTransient<ICatSqlRepository, CatSqlRepository>();
             services.AddTransient<ICatHttpRepository, CatHttpRepository>();
 
-
-            //services.AddLogging(builder => { builder.AddSerilog(dispose: true); });
-
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44346"));
+            });
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,7 +61,7 @@ namespace CutestCat
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseCors(options => options.WithOrigins("https://localhost:44346"));
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -72,7 +72,6 @@ namespace CutestCat
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
 
 
         }

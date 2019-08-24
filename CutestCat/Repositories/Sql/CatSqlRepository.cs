@@ -20,7 +20,10 @@ namespace CutestCat.Repositories.Sql
 
         public List<Cat> GetCats()
         {
-            return SqlHelper.GetList<CatSqlObjet>(Cat_Context, "PS_GetCats").Select(cat => cat.ToModel()).ToList();
+            return SqlHelper.GetList<CatSqlObjet>(Cat_Context, "PS_GetCats")
+                            .Select(cat => cat.ToModel())
+                            .OrderByDescending(cat => cat.Score)
+                            .ToList();
         }
 
         public void Vote(VoteModel model)

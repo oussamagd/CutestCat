@@ -25,12 +25,12 @@ export class NavMenu extends Component {
             </LinkContainer>
             <LinkContainer to={'/counter'}>
               <NavItem>
-                 <Glyphicon glyph='list-alt' /> Chats
+                 <Glyphicon glyph='thumbs-up' /> Vote
               </NavItem>
             </LinkContainer>
-            <LinkContainer to={'/fetchdata'}>
+                <LinkContainer to={'/Cats'}>
               <NavItem>
-                 <Glyphicon glyph='thumbs-up' /> Vote
+                 <Glyphicon glyph='list-alt' /> Chats
               </NavItem>
             </LinkContainer>
           </Nav>

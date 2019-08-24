@@ -109,5 +109,19 @@ namespace CutestCatTest.Business
             cats[0].WinVoteCount.Should().Be(1);
 
         }
+
+        [Fact]
+        public void TestGetCat_WhenNoDatainDB_ShouldReturnEmptyList()
+        {
+            //Given
+            catSqlRepositoryMocked.Setup(mock => mock.GetCats()).Returns(new List<Cat>());
+
+            //When
+            var cats = Tested.GetCats();
+
+            //Then
+            cats.Count.Should().Be(0);
+
+        }
     }
 }
