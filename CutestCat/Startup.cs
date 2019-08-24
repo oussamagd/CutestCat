@@ -45,6 +45,7 @@ namespace CutestCat
             {
                 c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44346"));
             });
+            services.AddMemoryCache();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

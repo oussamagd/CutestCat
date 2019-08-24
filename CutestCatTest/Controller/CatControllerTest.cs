@@ -65,18 +65,5 @@ namespace CutestCatTest.Controller
             result[0]["lostVoteCount"].Value<int>().Should().Be(10);
             result[0]["winVoteCount"].Value<int>().Should().Be(1);
         }
-
-        [Fact]
-        public async void TestVote_ReturnsOk()
-        {
-            // When
-            var message = new HttpRequestMessage(HttpMethod.Get, "/api/Cat/Vote");
-            var httpResponseMessage = await _client.SendAsync(message);
-
-            // Then
-            var httpBody = await httpResponseMessage.Content.ReadAsStringAsync();
-
-            httpResponseMessage.StatusCode.Should().Be(HttpStatusCode.OK);
-        }
     }
 }
