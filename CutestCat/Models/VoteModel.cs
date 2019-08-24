@@ -10,4 +10,5 @@ namespace CutestCat.Models
         public Cat WinnerCat { get; set; }
         public Cat LoserCat { get; set; }
     }
+
 }

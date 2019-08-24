@@ -61,7 +61,7 @@ namespace CutestCat
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseCors(options => options.WithOrigins("https://localhost:44346"));
+            app.UseCors(options => options.WithOrigins("https://localhost:44346").AllowAnyHeader().AllowAnyMethod());
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CutestCat.Business;
 using CutestCat.Models;
+using CutestCat.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,15 +30,15 @@ namespace CutestCat.Controllers
 
         [HttpGet]
         [Route("Vote/Candidates")]
-        public ActionResult<List<Cat>> GetCandidates()
+        public ActionResult<List<CadidateCatViewModel>> GetCandidates()
         {
             var catsForVote = _catBusiness.GetCandidates();
-            return Ok(catsForVote);
+            return Ok(catsForVote.Select(cat => new CadidateCatViewModel(cat)));
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("Vote")]
-        public IActionResult Vote(VoteModel model)
+        public IActionResult Vote([FromBody]VoteModel model = null)
         {
             _catBusiness.Vote(model);
             return Ok();

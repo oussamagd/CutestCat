@@ -29,7 +29,7 @@ export class Cats extends Component {
                     {cats.map(cat =>
                         <tr key={cat.reference}>
                             <td>{cat.reference}</td>
-                            <td><img src={cat.url} alt={"logo"} style={{ width: '150px', height: '150px' }} /></td>
+                            <td><img src={cat.url} style={{ width: '150px', height: '150px' }} /></td>
                             <td>{cat.score}</td>
                         </tr>
                     )}

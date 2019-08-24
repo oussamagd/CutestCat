@@ -34,9 +34,8 @@ namespace CutestCat.Repositories.Sql
                 {"@WinCatUrl" , model.WinnerCat.Url},
                 {"@LostCatReference" , model.LoserCat.Reference},
                 {"@LostCatUrl" , model.LoserCat.Url},
-
             };
-            SqlHelper.ExecuteProc<CatSqlObjet>(Cat_Context, "PS_GetCats", parameters);
+            SqlHelper.ExecuteProc<CatSqlObjet>(Cat_Context, "PS_InsertVote", parameters);
         }
     }
 }
