@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CutestCat.Business;
+﻿using CutestCat.Business;
 using CutestCat.Models;
 using CutestCat.ViewModel;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CutestCat.Controllers
 {
@@ -38,10 +35,10 @@ namespace CutestCat.Controllers
 
         [HttpPost]
         [Route("Vote")]
-        public IActionResult Vote([FromBody]VoteModel model = null)
+        public IActionResult Vote([FromBody]VoteViewModel model)
         {
-            _catBusiness.Vote(model);
-            return Ok();
+            _catBusiness.Vote(model.ToModel());
+            return NoContent();
         }
     }
 }

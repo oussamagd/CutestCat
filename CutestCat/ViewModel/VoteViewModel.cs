@@ -1,19 +1,19 @@
-﻿//using CutestCat.Models;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Threading.Tasks;
+﻿using CutestCat.Models;
 
-//namespace CutestCat.ViewModel
-//{
-//    public class VoteViewModel
-//    {
-//        public CadidateCatViewModel WinnerCat { get; set; }
-//        public CadidateCatViewModel LoserCat { get; set; }
+namespace CutestCat.ViewModel
+{
+    public class VoteViewModel
+    {
+        public CadidateCatViewModel WinnerCat { get; set; }
+        public CadidateCatViewModel LoserCat { get; set; }
 
-//        public List<Cat> ToModel()
-//        {
-//            return new List<Cat>() {  }
-//        }
-//    }
-//}
+        public VoteModel ToModel()
+        {
+            return new VoteModel
+            {
+                WinnerCat = new Cat() { Url = WinnerCat.Url, Reference = WinnerCat.reference },
+                LoserCat = new Cat() { Url = LoserCat.Url, Reference = LoserCat.reference }
+            };
+        }
+    }
+}

@@ -1,8 +1,5 @@
-﻿using System;
+﻿using CutestCat.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CutestCat.Models;
 
 namespace CutestCat.Repositories.Sql
 {

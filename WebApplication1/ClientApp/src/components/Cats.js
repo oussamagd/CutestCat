@@ -45,7 +45,6 @@ export class Cats extends Component {
 
         return (
             <div>
-                <h1>Nos chats avec leurs resultats</h1>
                 {contents}
             </div>
         );

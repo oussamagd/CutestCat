@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CutestCat.Models;
+﻿using CutestCat.Models;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CutestCat.Repositories.Http
 {
@@ -23,7 +22,7 @@ namespace CutestCat.Repositories.Http
             List<Cat> allCandidates;
             if (!_cache.TryGetValue("AllCatCandidates", out allCandidates))
             {
-                var catsDto = HttpHelper.Get<CatsHttpObject>(_apiConfiguration.Value.CatApiPath);
+                var catsDto = HttpHelper.Get<CatsHttpObject>(_apiConfiguration.Value.CatApiUrl);
                 allCandidates = catsDto.Images.Select(cat => cat.ToModel()).ToList();
                 var cacheEntryOptions = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(30));
                 _cache.Set("AllCatCandidates", allCandidates, cacheEntryOptions);

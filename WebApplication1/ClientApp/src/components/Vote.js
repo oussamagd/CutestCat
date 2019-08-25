@@ -28,7 +28,14 @@ export class Vote extends Component {
                 WinnerCat: { 'reference': winnerCat.reference, 'url': winnerCat.url },
                 loserCat: { 'reference': loserCat.reference, 'url': loserCat.url }
             })
-        }).then(window.location.reload());
+        }).then(data => {
+            if (data.status == 204) {
+                window.location.reload();
+            }
+            else {
+                console.log('une erreur est apparu, (il faut prévoir du temps pour gerer ces erreur)');
+            }
+        });
     }
 
     static renderCandidates(candidates) {

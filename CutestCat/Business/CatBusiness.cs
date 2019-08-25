@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CutestCat.Models;
+﻿using CutestCat.Models;
 using CutestCat.Repositories.Http;
 using CutestCat.Repositories.Sql;
-using Microsoft.Extensions.Options;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CutestCat.Business
 {
